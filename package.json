@@ -1,12 +1,15 @@
 {
-  "name": "lpm",
+  "name": "lua-loader",
   "version": "0.0.1",
   "description": "Make require() in lua to load lua npm packages as lua modules",
   "main": "init.lua",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/wscherphof/lua-loader.git"
+  },
   "keywords": [
     "lua",
     "npm",
