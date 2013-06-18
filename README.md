@@ -2,6 +2,8 @@
 
 Make require() in lua to load lua npm packages as lua modules
 
+## Usage
+
 ### 1. Install
 In the root of your project, `npm install lpm`
 
@@ -31,3 +33,7 @@ myObj:on("spoken", function (text)
 end)
 myObj:talk()
 ```
+
+## Limitations
+- Doesn't read the `package.json`. So won't respect the `main` entry in there. Tries to load `./init.lua` or else `./<package name>.lua` and that's it.
+
