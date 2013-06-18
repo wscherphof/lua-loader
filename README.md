@@ -10,7 +10,7 @@ In the root of your project, `npm install lpm`
 ### 2. Initialise
 At the start of the main lua file in your project, load lpm once:
 ```lua
-require("node_modules.lpm.init")(function() end)
+require("node_modules.lua-loader.init")(function() end)
 ```
 (It's initialised a bit magically with a dummy function that will point it to where the root of the project is.
 Don't worry, just type it as above, and aftwerwards everything will look just normal)
