@@ -5,7 +5,7 @@ Make require() in lua to load lua npm packages as lua modules
 ## Usage
 
 ### 1. Install
-In the root of your project, `npm install lpm`
+In the root of your project, `npm install lua-loader`
 
 ### 2. Initialise
 At the start of the main lua file in your project, load lpm once:
