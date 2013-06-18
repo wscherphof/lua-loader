@@ -1,0 +1,22 @@
+{
+  "name": "lpm",
+  "version": "0.0.1",
+  "description": "Make require() in lua to load lua npm packages as lua modules",
+  "main": "init.lua",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "lua",
+    "npm",
+    "require",
+    "module",
+    "package",
+    "modules",
+    "packages",
+    "node_modules"
+  ],
+  "author": "Wouter Scherphof",
+  "license": "LGPL"
+}
