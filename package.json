@@ -1,6 +1,6 @@
 {
   "name": "lua-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Make require() in lua to load lua npm packages as lua modules",
   "main": "init.lua",
   "scripts": {
