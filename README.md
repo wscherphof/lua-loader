@@ -22,7 +22,7 @@ You can now just:
 ```lua
 local EventEmitter = require("lua-eventemitter")
 ```
-And then just use the module for what it's useful for, eg.
+And then just use the module for what it's useful for, eg:
 ```lua
 local myObj = EventEmitter:new({text = "Hello, world!"})
 function myObj:talk ()
