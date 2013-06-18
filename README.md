@@ -16,11 +16,11 @@ require("node_modules.lua-loader.init")(function() end)
 Don't worry, just type it as above, and aftwerwards everything will look just normal)
 
 ### 3. Require what you need
-Install the lua npm package you want to use in your project, eg. `npm install lua-eventemitter`.
-This will install the package as expected in `./node_modules/lua-eventemitter`.
+Install the lua npm package you want to use in your project, eg. `npm install lua-events`.
+This will install the package as expected in `./node_modules/lua-events`.
 You can now just:
 ```lua
-local EventEmitter = require("lua-eventemitter")
+local EventEmitter = require("lua-events").EventEmitter
 ```
 And then just use the module for what it's useful for, eg:
 ```lua
