@@ -1,8 +1,11 @@
 # lua-loader
 
-Make require() in lua to load lua npm packages as lua modules
+Make require() in lua to load lua [npm](http://npmjs.org) packages as lua modules
 
 ## Usage
+
+### 0. NPM
+Download and install [Node.js](http://nodejs.org/download/). Then you have `npm`
 
 ### 1. Install
 In the root of your project, `npm install lua-loader`
