@@ -29,7 +29,7 @@ And then just use the module for what it's useful for, eg:
 ```lua
 local myObj = EventEmitter:new({text = "Hello, world!"})
 function myObj:talk ()
-  self:emit("spoken", self:text)
+  self:emit("spoken", self.text)
 end
 myObj:on("spoken", function (text)
   print("myObj said", text)
