@@ -43,9 +43,10 @@ local function lpmrequire (main, luarequire)
     -- else, walk up the source tree and try to find it somewhere up there
     local paths, callinfo, calldir, loaddir = {}, debug.getinfo(2, "S")
     if callinfo then calldir = string.match(callinfo.source, "@(.*)" .. dirsep) end
-    if calldir then loaddir = string.match(calldir, maindir .. dirsep .. "(.*)") end
+    if calldir then loaddir = string.match(calldir, maindir .. dirsep .. "(.*)")
+                           or string.match(calldir, "%."     .. dirsep .. "(.*)") end
     if loaddir then
-      loaddir = string.gsub(loaddir, dirsep, "%.")
+      loaddir = string.gsub(loaddir, dirsep, ".")
       local path
       for dir in string.gmatch(loaddir, "[^%.]+") do
         if path then path = path .. "." .. dir
