@@ -64,5 +64,8 @@ require("../lib/foo")
 ## Limitations
 - Doesn't read the `package.json`. So won't respect the `main` entry in there. Tries to load `./init.lua` or else `./<package name>.lua` and that's it.
 
+##Tests
+`npm test lua-loader`
+
 ## License
 [LGPL+](https://github.com/wscherphof/lua-loader/blob/master/LICENSE.md)
