@@ -1,6 +1,5 @@
 # lua-loader
-
-Make require() in lua to load lua [npm](http://npmjs.org) packages as lua modules
+Manage your [Lua](http://www.lua.org/) modules with [npm](http://npmjs.org)
 
 ## Usage
 
@@ -15,6 +14,7 @@ In the main lua file in your project:
 ```lua
 require("node_modules.lua-loader.init")
 ```
+Now `require()` knows all the new tricks.
 
 ### 3. Have fun
 
@@ -38,7 +38,7 @@ myObj:talk()
 ```
 
 #### Require source files
-Suppuse the following directory structue:
+Suppose the following directory structue:
 ```
 project-root
 ├── init.lua
