@@ -39,19 +39,15 @@ myObj:talk()
 
 #### Require source files
 Suppuse the following directory structue:
+```
 project-root
-
 ├── init.lua
-
 ├─┬ lib
-
 │ └── foo.lua
-
 └─┬ tests
-
   ├── init.lua
-
   └── test-1.lua
+```
 - From `init.lua` you can load `lib/foo.lua` with:
 ```lua
 require("./lib/foo")
