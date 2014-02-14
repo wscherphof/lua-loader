@@ -4,21 +4,21 @@ Make require() in lua to load lua [npm](http://npmjs.org) packages as lua module
 
 ## Usage
 
-### 0. NPM
+### 0. npm
 Download and install [Node.js](http://nodejs.org/download/). Then you have `npm`
 
 ### 1. Install
 In the root of your project, `npm install lua-loader`
 
 ### 2. Initialise
-At the start of the main lua file in your project, enable lua-loader as follows:
+In the main lua file in your project:
 ```lua
-require("node_modules.lua-loader.init")(function() end)
+require("node_modules.lua-loader.init")
 ```
-(It's initialised a bit magically with a dummy function that will point it to where the root of the project is.
-Don't worry, just type it as above, and aftwerwards everything will look just normal)
 
-### 3. Require what you need
+### 3. Have fun
+
+#### Require modules
 Install the lua npm package you want to use in your project, eg. `npm install lua-events`.
 This will install the package as expected in `./node_modules/lua-events`.
 You can now just:
@@ -37,8 +37,35 @@ end)
 myObj:talk()
 ```
 
+#### Require source files
+Suppuse the following directory structue:
+```
+project-root
+├── init.lua
+├─┬ lib
+│ └── foo.lua
+└─┬ tests
+  ├── init.lua
+  └── test-1.lua
+```
+- From `init.lua` you can load `lib/foo.lua` with:
+```lua
+require("./lib/foo")
+```
+- From `tests/init.lua` you can load `tests/test-1.lua` with:
+```lua
+require("./test-1")
+```
+- From `tests/init.lua` you can load `lib/foo.lua` with:
+```lua
+require("../lib/foo")
+```
+
 ## Limitations
 - Doesn't read the `package.json`. So won't respect the `main` entry in there. Tries to load `./init.lua` or else `./<package name>.lua` and that's it.
+
+##Tests
+`npm test lua-loader`
 
 ## License
 [LGPL+](https://github.com/wscherphof/lua-loader/blob/master/LICENSE.md)

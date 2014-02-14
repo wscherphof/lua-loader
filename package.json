@@ -1,10 +1,10 @@
 {
   "name": "lua-loader",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Make require() in lua to load lua npm packages as lua modules",
   "main": "init.lua",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lua test.lua"
   },
   "repository": {
     "type" : "git",
